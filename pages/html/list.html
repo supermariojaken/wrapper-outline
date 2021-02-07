@@ -13,29 +13,22 @@
 	<div>
 		<h1 style="margin:0"><img id="logo" src="../img/list_logo.svg" alt="Wrapper: Offline"/></h1>
 		<div id="headbuttons">
-			<a class="button_small" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
-			<div id="char_dropdown" class="button_small">
-				<div>CREATE A CHARACTER</div>
+			<a class="button_blue" onclick="document.getElementById('file').click()">UPLOAD A MOVIE</a>
+			<div id="char_dropdown" class="button_purple">
+				<div>SELECT A THEME</div>
 				<menu>
-					<h2>Comedy World</h2>
-					<a href="/cc?themeId=family&bs=adam">Guy (Adam)</a>
-					<a href="/cc?themeId=family&bs=eve">Girl (Eve)</a>
-					<a href="/cc?themeId=family&bs=bob">Fat (Bob)</a>
-					<a href="/cc?themeId=family&bs=rocky">Buff (Rocky)</a>
-					<hr>
-					<h2>Anime</h2>
-					<a href="/cc?themeId=anime&bs=guy">Guy</a>
-					<a href="/cc?themeId=anime&bs=girl">Girl</a>
-					<a href="/cc?themeId=ninjaanime&bs=guy">Guy (Ninja)</a>
-					<a href="/cc?themeId=ninjaanime&bs=girl">Girl (Ninja)</a>
-					<hr>
-					<h2>Peepz</h2>
-					<a href="/cc?themeId=cc2&bs=default">Lil Peepz</a>
-					<a href="/cc?themeId=chibi&bs=default">Chibi Peepz</a>
-					<a href="/cc?themeId=ninja&bs=default">Chibi Ninjas</a>
+<h2>Comedy World</h2>
+<a href="/go_full?tray=custom">Make a Video</a>
+<a href="/character/browser?themeId=family">Create &amp; Browse Characters</a>
+<hr>
+<h2>Anime</h2>
+<a href="/go_full?tray=anime">Make a Video</a>
+<a href="/character/browser?themeId=anime">Create &amp; Browse Characters</a>
+<hr>
+<h2>Peepz</h2>
+<a href="/go_full?tray=cc2">Make a Video</a>
+<a href="/character/browser?themeId=cc2&amp;bs=default">Create &amp; Browse Characters</a>
 				</menu>
-			</div>
-			<a href="/go_full" class="button_big">MAKE A VIDEO</a>
 		</div>
 	</div>
 </header>
@@ -56,7 +49,8 @@
 	</tfoot>
 </table>
 <footer>
-	<a id="discordlink" href="https://discord.gg/yhGAetN">Discord Server</a>
+<a class="button_gray" href="https://discord.gg/HevKtvvN7D">Discord Server</a>
+<a class="button_gray" href="https://discord.gg/b7YSRkg">Wrapper Hub</a>
 </footer>
 
 <form enctype='multipart/form-data' action='/upload_movie' method='post'>
